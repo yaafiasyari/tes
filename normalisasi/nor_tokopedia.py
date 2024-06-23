@@ -7,7 +7,7 @@ DATABASE_URI = f'postgresql+psycopg2://{db_config.get_user()}:{db_config.get_pas
 engine = create_engine(DATABASE_URI)
 
 # indomart_df = pd.read_csv('products_klikindomart.csv')
-tokopedia_df = pd.read_csv('products_tokopedia.csv')
+tokopedia_df = pd.read_csv('D:/Yaafi/Learn/tes/normalisasi/products_tokopedia.csv')
 
 
 tokopedia_df['original_price'] = tokopedia_df['original_price'].astype(str).str.replace('Rp', '').str.replace('.', '')

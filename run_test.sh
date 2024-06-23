@@ -37,14 +37,14 @@ else
 fi
 
 
-last_update=$(date +"%F %T")
-echo "${last_update} : scrapping indomart"
-echo "${last_update} : scrapping indomart" >> ${log_file}
-python python D:/Yaafi/Learn/tes/scraping/klikindomart.py >> ${log_file}
+# last_update=$(date +"%F %T")
+# echo "${last_update} : scrapping indomart"
+# echo "${last_update} : scrapping indomart" >> ${log_file}
+# python python D:/Yaafi/Learn/tes/scraping/klikindomart.py >> ${log_file}
 
-echo "${last_update} : scrapping tokped"
-echo "${last_update} : scrapping tokped" >> ${log_file}
-python D:/Yaafi/Learn/tes/scraping/tokped_data.py >> ${log_file}
+# echo "${last_update} : scrapping tokped"
+# echo "${last_update} : scrapping tokped" >> ${log_file}
+# python D:/Yaafi/Learn/tes/scraping/tokped_data.py >> ${log_file}
 
 echo "${last_update} : normalisasi indomart"
 echo "${last_update} : normalisasi indomart" >> ${log_file}

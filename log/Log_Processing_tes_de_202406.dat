@@ -224,3 +224,1104 @@ Scraping URL: https://www.tokopedia.com/unilever/product/page/1
 Successfully retrieved page 1
 Found 10 product on page 1
 Scraping URL: https://www.tokopedia.com/unilever/product/page/2
+2024-06-23 23:49:11 : Start  20240622
+2024-06-23 23:49:11 : scrapping indomart
+2024-06-23 23:49:11 : scrapping tokped
+Scraping URL: https://www.tokopedia.com/unilever/product/page/1
+Successfully retrieved page 1
+Found 10 product on page 1
+Scraping URL: https://www.tokopedia.com/unilever/product/page/2
+Successfully retrieved page 2
+Found 10 product on page 2
+Scraping URL: https://www.tokopedia.com/unilever/product/page/3
+2024-06-23 23:51:49 : Start  20240622
+2024-06-23 23:51:49 : scrapping indomart
+2024-06-23 23:51:49 : normalisasi tokped
+2024-06-23 23:51:50 : data processing raw_product
+Truncating raw_products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:51:50 : data processing product_master
+Truncating product_master table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:51:50 : data processing products
+Truncating products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:51:51 : ML prediction price
+Products with required columns:
+   productmasterid   price
+0              205  121300
+1               17   16600
+2              115   63300
+3              477   25000
+4              599   36100
+Counts per productmasterid:
+productmasterid
+157    2
+538    2
+238    2
+530    2
+564    2
+      ..
+496    1
+485    1
+52     1
+269    1
+343    1
+Name: count, Length: 646, dtype: int64
+Counts per productmasterid after filtering:
+productmasterid
+137    2
+234    2
+118    2
+157    2
+497    2
+572    2
+538    2
+222    2
+213    2
+123    2
+564    2
+530    2
+238    2
+589    2
+Name: count, dtype: int64
+Data with Lag Features:
+      id  ... price_lag_1
+555  556  ...     59000.0
+556  557  ...     59000.0
+562  563  ...     29900.0
+564  565  ...     40300.0
+565  566  ...     18300.0
+
+[5 rows x 10 columns]
+Product Data for productmasterid 157:
+      id  ... price_lag_1
+555  556  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 497:
+      id  ... price_lag_1
+556  557  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 572:
+      id  ... price_lag_1
+562  563  ...     29900.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 538:
+      id                            name  ...  created_date  price_lag_1
+564  565  Vaseline Lip Therapy Rosy Lips  ...    2025-12-17      40300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 234:
+      id                                name  ...  created_date  price_lag_1
+565  566  Royco Bumbu Pelezat Serbaguna Ayam  ...    2025-12-18      18300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 118:
+      id                           name  ...  created_date  price_lag_1
+567  568  Royco Bumbu Dasar Ayam Kuning  ...    2025-12-20      42000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 222:
+      id                              name  ...  created_date  price_lag_1
+573  574  Dove Micellar Shampoo Hair Boost  ...    2025-12-26      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 213:
+      id                                name  ...  created_date  price_lag_1
+574  575  Dove Micellar Shampoo Deep Cleanse  ...    2025-12-27      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 123:
+      id  ... price_lag_1
+575  576  ...     32100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 238:
+      id                                name  ...  created_date  price_lag_1
+580  581  Dove Serum Shampoo Total Hair Fall  ...    2026-01-02      87000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 589:
+      id                                      name  ...  created_date  price_lag_1
+581  582  Sunsilk Shampoo Co-Creations Black Shine  ...    2026-01-03      80400.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 137:
+      id                            name  ...  created_date  price_lag_1
+604  605  Lifebuoy Shampoo Anti Dandruff  ...    2026-01-26      41200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 564:
+      id  ... price_lag_1
+623  624  ...     10200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 530:
+      id  ... price_lag_1
+624  625  ...     10200.0
+
+[1 rows x 10 columns]
+Predictions DataFrame:
+   productmasterid                       date  predicted_price
+0              157 2024-06-24 23:51:54.982781          59000.0
+1              157 2024-06-25 23:51:54.982781          59000.0
+2              157 2024-06-26 23:51:54.982781          59000.0
+3              497 2024-06-24 23:51:54.991042          59000.0
+4              497 2024-06-25 23:51:54.991042          59000.0
+Data saved to PostgreSQL successfully.
+2024-06-23 23:51:55 : 20240622 Finish
+=======================================================================
+2024-06-23 23:53:32 : Start  20240622
+2024-06-23 23:53:32 : scrapping indomart
+2024-06-23 23:53:32 : normalisasi tokped
+2024-06-23 23:53:33 : data processing raw_product
+Truncating raw_products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:53:33 : data processing product_master
+Truncating product_master table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:53:33 : data processing products
+Truncating products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:53:34 : ML prediction price
+Products with required columns:
+   productmasterid   price
+0              205  121300
+1               17   16600
+2              115   63300
+3              477   25000
+4              599   36100
+Counts per productmasterid:
+productmasterid
+157    2
+538    2
+238    2
+530    2
+564    2
+      ..
+496    1
+485    1
+52     1
+269    1
+343    1
+Name: count, Length: 646, dtype: int64
+Counts per productmasterid after filtering:
+productmasterid
+137    2
+234    2
+118    2
+157    2
+497    2
+572    2
+538    2
+222    2
+213    2
+123    2
+564    2
+530    2
+238    2
+589    2
+Name: count, dtype: int64
+Data with Lag Features:
+      id  ... price_lag_1
+555  556  ...     59000.0
+556  557  ...     59000.0
+562  563  ...     29900.0
+564  565  ...     40300.0
+565  566  ...     18300.0
+
+[5 rows x 10 columns]
+Product Data for productmasterid 157:
+      id  ... price_lag_1
+555  556  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 497:
+      id  ... price_lag_1
+556  557  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 572:
+      id  ... price_lag_1
+562  563  ...     29900.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 538:
+      id                            name  ...  created_date  price_lag_1
+564  565  Vaseline Lip Therapy Rosy Lips  ...    2025-12-17      40300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 234:
+      id                                name  ...  created_date  price_lag_1
+565  566  Royco Bumbu Pelezat Serbaguna Ayam  ...    2025-12-18      18300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 118:
+      id                           name  ...  created_date  price_lag_1
+567  568  Royco Bumbu Dasar Ayam Kuning  ...    2025-12-20      42000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 222:
+      id                              name  ...  created_date  price_lag_1
+573  574  Dove Micellar Shampoo Hair Boost  ...    2025-12-26      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 213:
+      id                                name  ...  created_date  price_lag_1
+574  575  Dove Micellar Shampoo Deep Cleanse  ...    2025-12-27      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 123:
+      id  ... price_lag_1
+575  576  ...     32100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 238:
+      id                                name  ...  created_date  price_lag_1
+580  581  Dove Serum Shampoo Total Hair Fall  ...    2026-01-02      87000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 589:
+      id                                      name  ...  created_date  price_lag_1
+581  582  Sunsilk Shampoo Co-Creations Black Shine  ...    2026-01-03      80400.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 137:
+      id                            name  ...  created_date  price_lag_1
+604  605  Lifebuoy Shampoo Anti Dandruff  ...    2026-01-26      41200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 564:
+      id  ... price_lag_1
+623  624  ...     10200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 530:
+      id  ... price_lag_1
+624  625  ...     10200.0
+
+[1 rows x 10 columns]
+Predictions DataFrame:
+   productmasterid                       date  predicted_price
+0              157 2024-06-24 23:53:35.283493          59000.0
+1              157 2024-06-25 23:53:35.283493          59000.0
+2              157 2024-06-26 23:53:35.283493          59000.0
+3              497 2024-06-24 23:53:35.292523          59000.0
+4              497 2024-06-25 23:53:35.292523          59000.0
+Data saved to PostgreSQL successfully.
+2024-06-23 23:53:35 : 20240622 Finish
+=======================================================================
+2024-06-23 23:54:09 : Start  20240622
+2024-06-23 23:54:09 : scrapping indomart
+2024-06-23 23:54:09 : normalisasi tokped
+2024-06-23 23:54:10 : data processing raw_product
+Truncating raw_products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:54:10 : data processing product_master
+Truncating product_master table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:54:10 : data processing products
+Truncating products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:54:11 : ML prediction price
+Products with required columns:
+   productmasterid   price
+0              205  121300
+1               17   16600
+2              115   63300
+3              477   25000
+4              599   36100
+Counts per productmasterid:
+productmasterid
+157    2
+538    2
+238    2
+530    2
+564    2
+      ..
+496    1
+485    1
+52     1
+269    1
+343    1
+Name: count, Length: 646, dtype: int64
+Counts per productmasterid after filtering:
+productmasterid
+137    2
+234    2
+118    2
+157    2
+497    2
+572    2
+538    2
+222    2
+213    2
+123    2
+564    2
+530    2
+238    2
+589    2
+Name: count, dtype: int64
+Data with Lag Features:
+      id  ... price_lag_1
+555  556  ...     59000.0
+556  557  ...     59000.0
+562  563  ...     29900.0
+564  565  ...     40300.0
+565  566  ...     18300.0
+
+[5 rows x 10 columns]
+Product Data for productmasterid 157:
+      id  ... price_lag_1
+555  556  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 497:
+      id  ... price_lag_1
+556  557  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 572:
+      id  ... price_lag_1
+562  563  ...     29900.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 538:
+      id                            name  ...  created_date  price_lag_1
+564  565  Vaseline Lip Therapy Rosy Lips  ...    2025-12-17      40300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 234:
+      id                                name  ...  created_date  price_lag_1
+565  566  Royco Bumbu Pelezat Serbaguna Ayam  ...    2025-12-18      18300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 118:
+      id                           name  ...  created_date  price_lag_1
+567  568  Royco Bumbu Dasar Ayam Kuning  ...    2025-12-20      42000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 222:
+      id                              name  ...  created_date  price_lag_1
+573  574  Dove Micellar Shampoo Hair Boost  ...    2025-12-26      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 213:
+      id                                name  ...  created_date  price_lag_1
+574  575  Dove Micellar Shampoo Deep Cleanse  ...    2025-12-27      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 123:
+      id  ... price_lag_1
+575  576  ...     32100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 238:
+      id                                name  ...  created_date  price_lag_1
+580  581  Dove Serum Shampoo Total Hair Fall  ...    2026-01-02      87000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 589:
+      id                                      name  ...  created_date  price_lag_1
+581  582  Sunsilk Shampoo Co-Creations Black Shine  ...    2026-01-03      80400.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 137:
+      id                            name  ...  created_date  price_lag_1
+604  605  Lifebuoy Shampoo Anti Dandruff  ...    2026-01-26      41200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 564:
+      id  ... price_lag_1
+623  624  ...     10200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 530:
+      id  ... price_lag_1
+624  625  ...     10200.0
+
+[1 rows x 10 columns]
+Predictions DataFrame:
+   productmasterid                       date  predicted_price
+0              157 2024-06-24 23:54:12.285495          59000.0
+1              157 2024-06-25 23:54:12.285495          59000.0
+2              157 2024-06-26 23:54:12.285495          59000.0
+3              497 2024-06-24 23:54:12.294796          59000.0
+4              497 2024-06-25 23:54:12.294796          59000.0
+Data saved to PostgreSQL successfully.
+2024-06-23 23:54:12 : 20240622 Finish
+=======================================================================
+2024-06-23 23:55:07 : Start  20240622
+2024-06-23 23:55:07 : scrapping indomart
+2024-06-23 23:55:07 : normalisasi tokped
+                                                  name  ...           platform
+8    Pond's Sunserum SPF50 Bottle 30g FREE Ponds Br...  ...  www.tokopedia.com
+13   Rinso Molto Detergen Bubuk Japanese Peach 770g...  ...  www.tokopedia.com
+15   Rinso Matic Deterjen Cair Bukaan Depan 1.45L F...  ...  www.tokopedia.com
+20   Dove Deodorant Serum Roll On 3% Niacinamide + ...  ...  www.tokopedia.com
+30   Cif Pembersih Serbaguna Original Botol 660g FR...  ...  www.tokopedia.com
+..                                                 ...  ...                ...
+688  Sunsilk Hijab Shampoo Strong Anti Hairfall 320...  ...  www.tokopedia.com
+689  Lux Sabun Mandi Cair Refill Sakura Bloom 450Ml...  ...  www.tokopedia.com
+690  Love Beauty And Planet Body Wash Majestic Glow...  ...  www.tokopedia.com
+691  Lifebuoy Wet Wipes Anti Bacterial Tisu Basah A...  ...  www.tokopedia.com
+692  Lifebuoy Wet Wipes Anti Bacterial Tisu Basah A...  ...  www.tokopedia.com
+
+[336 rows x 6 columns]
+Data saved to PostgreSQL successfully.
+2024-06-23 23:55:07 : data processing raw_product
+Truncating raw_products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:55:08 : data processing product_master
+Truncating product_master table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:55:08 : data processing products
+Truncating products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:55:09 : ML prediction price
+Products with required columns:
+   productmasterid   price
+0              205  121300
+1               17   16600
+2              115   63300
+3              477   25000
+4              599   36100
+Counts per productmasterid:
+productmasterid
+157    2
+538    2
+238    2
+530    2
+564    2
+      ..
+496    1
+485    1
+52     1
+269    1
+343    1
+Name: count, Length: 646, dtype: int64
+Counts per productmasterid after filtering:
+productmasterid
+137    2
+234    2
+118    2
+157    2
+497    2
+572    2
+538    2
+222    2
+213    2
+123    2
+564    2
+530    2
+238    2
+589    2
+Name: count, dtype: int64
+Data with Lag Features:
+      id  ... price_lag_1
+555  556  ...     59000.0
+556  557  ...     59000.0
+562  563  ...     29900.0
+564  565  ...     40300.0
+565  566  ...     18300.0
+
+[5 rows x 10 columns]
+Product Data for productmasterid 157:
+      id  ... price_lag_1
+555  556  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 497:
+      id  ... price_lag_1
+556  557  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 572:
+      id  ... price_lag_1
+562  563  ...     29900.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 538:
+      id                            name  ...  created_date  price_lag_1
+564  565  Vaseline Lip Therapy Rosy Lips  ...    2025-12-17      40300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 234:
+      id                                name  ...  created_date  price_lag_1
+565  566  Royco Bumbu Pelezat Serbaguna Ayam  ...    2025-12-18      18300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 118:
+      id                           name  ...  created_date  price_lag_1
+567  568  Royco Bumbu Dasar Ayam Kuning  ...    2025-12-20      42000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 222:
+      id                              name  ...  created_date  price_lag_1
+573  574  Dove Micellar Shampoo Hair Boost  ...    2025-12-26      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 213:
+      id                                name  ...  created_date  price_lag_1
+574  575  Dove Micellar Shampoo Deep Cleanse  ...    2025-12-27      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 123:
+      id  ... price_lag_1
+575  576  ...     32100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 238:
+      id                                name  ...  created_date  price_lag_1
+580  581  Dove Serum Shampoo Total Hair Fall  ...    2026-01-02      87000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 589:
+      id                                      name  ...  created_date  price_lag_1
+581  582  Sunsilk Shampoo Co-Creations Black Shine  ...    2026-01-03      80400.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 137:
+      id                            name  ...  created_date  price_lag_1
+604  605  Lifebuoy Shampoo Anti Dandruff  ...    2026-01-26      41200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 564:
+      id  ... price_lag_1
+623  624  ...     10200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 530:
+      id  ... price_lag_1
+624  625  ...     10200.0
+
+[1 rows x 10 columns]
+Predictions DataFrame:
+   productmasterid                       date  predicted_price
+0              157 2024-06-24 23:55:10.206313          59000.0
+1              157 2024-06-25 23:55:10.206313          59000.0
+2              157 2024-06-26 23:55:10.206313          59000.0
+3              497 2024-06-24 23:55:10.216807          59000.0
+4              497 2024-06-25 23:55:10.216807          59000.0
+Data saved to PostgreSQL successfully.
+2024-06-23 23:55:10 : 20240622 Finish
+=======================================================================
+2024-06-23 23:56:12 : Start  20240622
+2024-06-23 23:56:12 : normalisasi indomart
+2024-06-23 23:56:12 : normalisasi tokped
+                                                  name  ...           platform
+8    Pond's Sunserum SPF50 Bottle 30g FREE Ponds Br...  ...  www.tokopedia.com
+13   Rinso Molto Detergen Bubuk Japanese Peach 770g...  ...  www.tokopedia.com
+15   Rinso Matic Deterjen Cair Bukaan Depan 1.45L F...  ...  www.tokopedia.com
+20   Dove Deodorant Serum Roll On 3% Niacinamide + ...  ...  www.tokopedia.com
+30   Cif Pembersih Serbaguna Original Botol 660g FR...  ...  www.tokopedia.com
+..                                                 ...  ...                ...
+688  Sunsilk Hijab Shampoo Strong Anti Hairfall 320...  ...  www.tokopedia.com
+689  Lux Sabun Mandi Cair Refill Sakura Bloom 450Ml...  ...  www.tokopedia.com
+690  Love Beauty And Planet Body Wash Majestic Glow...  ...  www.tokopedia.com
+691  Lifebuoy Wet Wipes Anti Bacterial Tisu Basah A...  ...  www.tokopedia.com
+692  Lifebuoy Wet Wipes Anti Bacterial Tisu Basah A...  ...  www.tokopedia.com
+
+[336 rows x 6 columns]
+Data saved to PostgreSQL successfully.
+2024-06-23 23:56:13 : data processing raw_product
+Truncating raw_products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:56:14 : data processing product_master
+Truncating product_master table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:56:14 : data processing products
+Truncating products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:56:14 : ML prediction price
+Products with required columns:
+   productmasterid   price
+0              205  121300
+1               17   16600
+2              115   63300
+3              477   25000
+4              599   36100
+Counts per productmasterid:
+productmasterid
+157    2
+538    2
+238    2
+530    2
+564    2
+      ..
+496    1
+485    1
+52     1
+269    1
+343    1
+Name: count, Length: 646, dtype: int64
+Counts per productmasterid after filtering:
+productmasterid
+137    2
+234    2
+118    2
+157    2
+497    2
+572    2
+538    2
+222    2
+213    2
+123    2
+564    2
+530    2
+238    2
+589    2
+Name: count, dtype: int64
+Data with Lag Features:
+      id  ... price_lag_1
+555  556  ...     59000.0
+556  557  ...     59000.0
+562  563  ...     29900.0
+564  565  ...     40300.0
+565  566  ...     18300.0
+
+[5 rows x 10 columns]
+Product Data for productmasterid 157:
+      id  ... price_lag_1
+555  556  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 497:
+      id  ... price_lag_1
+556  557  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 572:
+      id  ... price_lag_1
+562  563  ...     29900.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 538:
+      id                            name  ...  created_date  price_lag_1
+564  565  Vaseline Lip Therapy Rosy Lips  ...    2025-12-17      40300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 234:
+      id                                name  ...  created_date  price_lag_1
+565  566  Royco Bumbu Pelezat Serbaguna Ayam  ...    2025-12-18      18300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 118:
+      id                           name  ...  created_date  price_lag_1
+567  568  Royco Bumbu Dasar Ayam Kuning  ...    2025-12-20      42000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 222:
+      id                              name  ...  created_date  price_lag_1
+573  574  Dove Micellar Shampoo Hair Boost  ...    2025-12-26      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 213:
+      id                                name  ...  created_date  price_lag_1
+574  575  Dove Micellar Shampoo Deep Cleanse  ...    2025-12-27      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 123:
+      id  ... price_lag_1
+575  576  ...     32100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 238:
+      id                                name  ...  created_date  price_lag_1
+580  581  Dove Serum Shampoo Total Hair Fall  ...    2026-01-02      87000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 589:
+      id                                      name  ...  created_date  price_lag_1
+581  582  Sunsilk Shampoo Co-Creations Black Shine  ...    2026-01-03      80400.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 137:
+      id                            name  ...  created_date  price_lag_1
+604  605  Lifebuoy Shampoo Anti Dandruff  ...    2026-01-26      41200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 564:
+      id  ... price_lag_1
+623  624  ...     10200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 530:
+      id  ... price_lag_1
+624  625  ...     10200.0
+
+[1 rows x 10 columns]
+Predictions DataFrame:
+   productmasterid                       date  predicted_price
+0              157 2024-06-24 23:56:15.816928          59000.0
+1              157 2024-06-25 23:56:15.816928          59000.0
+2              157 2024-06-26 23:56:15.816928          59000.0
+3              497 2024-06-24 23:56:15.825151          59000.0
+4              497 2024-06-25 23:56:15.825151          59000.0
+Data saved to PostgreSQL successfully.
+2024-06-23 23:56:16 : 20240622 Finish
+=======================================================================
+2024-06-23 23:57:41 : Start  20240622
+2024-06-23 23:57:41 : normalisasi indomart
+                                                  name  ...               platform
+0    Zwitsal Baby Bath Hair & Body Antibacterial 200mL  ...  www.klikindomaret.com
+1    Zwitsal Baby Hair Lotion Natural Sweet Almond ...  ...  www.klikindomaret.com
+2    Zwitsal Kids Hair Lotion Spray Green Natural &...  ...  www.klikindomaret.com
+3    Zwitsal Baby Bath Hair & Body Antibacterial 400mL  ...  www.klikindomaret.com
+4                   Zwitsal Face & Body Care Cream 50G  ...  www.klikindomaret.com
+..                                                 ...  ...                    ...
+319  Super Pell Pembersih Lantai Refill Fresh Apple...  ...  www.klikindomaret.com
+320                     Wipol Karbol Wangi Lemon 750Ml  ...  www.klikindomaret.com
+321          Sunlight Pencuci Piring Jeruk Nipis 650mL  ...  www.klikindomaret.com
+322            Vixal Pembersih Keramik Pors Biru 750mL  ...  www.klikindomaret.com
+323  Super Pell Pembersih Lantai Refill Lemon Ginge...  ...  www.klikindomaret.com
+
+[324 rows x 6 columns]
+Data saved to PostgreSQL successfully.
+2024-06-23 23:57:41 : normalisasi tokped
+                                                  name  ...           platform
+8    Pond's Sunserum SPF50 Bottle 30g FREE Ponds Br...  ...  www.tokopedia.com
+13   Rinso Molto Detergen Bubuk Japanese Peach 770g...  ...  www.tokopedia.com
+15   Rinso Matic Deterjen Cair Bukaan Depan 1.45L F...  ...  www.tokopedia.com
+20   Dove Deodorant Serum Roll On 3% Niacinamide + ...  ...  www.tokopedia.com
+30   Cif Pembersih Serbaguna Original Botol 660g FR...  ...  www.tokopedia.com
+..                                                 ...  ...                ...
+688  Sunsilk Hijab Shampoo Strong Anti Hairfall 320...  ...  www.tokopedia.com
+689  Lux Sabun Mandi Cair Refill Sakura Bloom 450Ml...  ...  www.tokopedia.com
+690  Love Beauty And Planet Body Wash Majestic Glow...  ...  www.tokopedia.com
+691  Lifebuoy Wet Wipes Anti Bacterial Tisu Basah A...  ...  www.tokopedia.com
+692  Lifebuoy Wet Wipes Anti Bacterial Tisu Basah A...  ...  www.tokopedia.com
+
+[336 rows x 6 columns]
+Data saved to PostgreSQL successfully.
+2024-06-23 23:57:42 : data processing raw_product
+Truncating raw_products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:57:42 : data processing product_master
+Truncating product_master table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:57:43 : data processing products
+Truncating products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-23 23:57:43 : ML prediction price
+Products with required columns:
+   productmasterid   price
+0              205  121300
+1               17   16600
+2              115   63300
+3              477   25000
+4              599   36100
+Counts per productmasterid:
+productmasterid
+157    2
+538    2
+238    2
+530    2
+564    2
+      ..
+496    1
+485    1
+52     1
+269    1
+343    1
+Name: count, Length: 646, dtype: int64
+Counts per productmasterid after filtering:
+productmasterid
+137    2
+234    2
+118    2
+157    2
+497    2
+572    2
+538    2
+222    2
+213    2
+123    2
+564    2
+530    2
+238    2
+589    2
+Name: count, dtype: int64
+Data with Lag Features:
+      id  ... price_lag_1
+555  556  ...     59000.0
+556  557  ...     59000.0
+562  563  ...     29900.0
+564  565  ...     40300.0
+565  566  ...     18300.0
+
+[5 rows x 10 columns]
+Product Data for productmasterid 157:
+      id  ... price_lag_1
+555  556  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 497:
+      id  ... price_lag_1
+556  557  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 572:
+      id  ... price_lag_1
+562  563  ...     29900.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 538:
+      id                            name  ...  created_date  price_lag_1
+564  565  Vaseline Lip Therapy Rosy Lips  ...    2025-12-17      40300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 234:
+      id                                name  ...  created_date  price_lag_1
+565  566  Royco Bumbu Pelezat Serbaguna Ayam  ...    2025-12-18      18300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 118:
+      id                           name  ...  created_date  price_lag_1
+567  568  Royco Bumbu Dasar Ayam Kuning  ...    2025-12-20      42000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 222:
+      id                              name  ...  created_date  price_lag_1
+573  574  Dove Micellar Shampoo Hair Boost  ...    2025-12-26      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 213:
+      id                                name  ...  created_date  price_lag_1
+574  575  Dove Micellar Shampoo Deep Cleanse  ...    2025-12-27      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 123:
+      id  ... price_lag_1
+575  576  ...     32100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 238:
+      id                                name  ...  created_date  price_lag_1
+580  581  Dove Serum Shampoo Total Hair Fall  ...    2026-01-02      87000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 589:
+      id                                      name  ...  created_date  price_lag_1
+581  582  Sunsilk Shampoo Co-Creations Black Shine  ...    2026-01-03      80400.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 137:
+      id                            name  ...  created_date  price_lag_1
+604  605  Lifebuoy Shampoo Anti Dandruff  ...    2026-01-26      41200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 564:
+      id  ... price_lag_1
+623  624  ...     10200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 530:
+      id  ... price_lag_1
+624  625  ...     10200.0
+
+[1 rows x 10 columns]
+Predictions DataFrame:
+   productmasterid                       date  predicted_price
+0              157 2024-06-24 23:57:44.733511          59000.0
+1              157 2024-06-25 23:57:44.733511          59000.0
+2              157 2024-06-26 23:57:44.733511          59000.0
+3              497 2024-06-24 23:57:44.741993          59000.0
+4              497 2024-06-25 23:57:44.741993          59000.0
+Data saved to PostgreSQL successfully.
+2024-06-23 23:57:45 : 20240622 Finish
+=======================================================================
+2024-06-24 00:00:11 : Start  20240623
+2024-06-24 00:00:11 : normalisasi indomart
+                                                  name  ...               platform
+0    Zwitsal Baby Bath Hair & Body Antibacterial 200mL  ...  www.klikindomaret.com
+1    Zwitsal Baby Hair Lotion Natural Sweet Almond ...  ...  www.klikindomaret.com
+2    Zwitsal Kids Hair Lotion Spray Green Natural &...  ...  www.klikindomaret.com
+3    Zwitsal Baby Bath Hair & Body Antibacterial 400mL  ...  www.klikindomaret.com
+4                   Zwitsal Face & Body Care Cream 50G  ...  www.klikindomaret.com
+..                                                 ...  ...                    ...
+319  Super Pell Pembersih Lantai Refill Fresh Apple...  ...  www.klikindomaret.com
+320                     Wipol Karbol Wangi Lemon 750Ml  ...  www.klikindomaret.com
+321          Sunlight Pencuci Piring Jeruk Nipis 650mL  ...  www.klikindomaret.com
+322            Vixal Pembersih Keramik Pors Biru 750mL  ...  www.klikindomaret.com
+323  Super Pell Pembersih Lantai Refill Lemon Ginge...  ...  www.klikindomaret.com
+
+[324 rows x 6 columns]
+Data saved to PostgreSQL successfully.
+2024-06-24 00:00:11 : normalisasi tokped
+                                                  name  ...           platform
+8    Pond's Sunserum SPF50 Bottle 30g FREE Ponds Br...  ...  www.tokopedia.com
+13   Rinso Molto Detergen Bubuk Japanese Peach 770g...  ...  www.tokopedia.com
+15   Rinso Matic Deterjen Cair Bukaan Depan 1.45L F...  ...  www.tokopedia.com
+20   Dove Deodorant Serum Roll On 3% Niacinamide + ...  ...  www.tokopedia.com
+30   Cif Pembersih Serbaguna Original Botol 660g FR...  ...  www.tokopedia.com
+..                                                 ...  ...                ...
+688  Sunsilk Hijab Shampoo Strong Anti Hairfall 320...  ...  www.tokopedia.com
+689  Lux Sabun Mandi Cair Refill Sakura Bloom 450Ml...  ...  www.tokopedia.com
+690  Love Beauty And Planet Body Wash Majestic Glow...  ...  www.tokopedia.com
+691  Lifebuoy Wet Wipes Anti Bacterial Tisu Basah A...  ...  www.tokopedia.com
+692  Lifebuoy Wet Wipes Anti Bacterial Tisu Basah A...  ...  www.tokopedia.com
+
+[336 rows x 6 columns]
+Data saved to PostgreSQL successfully.
+2024-06-24 00:00:13 : data processing raw_product
+Truncating raw_products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-24 00:00:13 : data processing product_master
+Truncating product_master table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-24 00:00:13 : data processing products
+Truncating products table
+Table truncated successfully.
+Table inserted successfully.
+2024-06-24 00:00:14 : ML prediction price
+Products with required columns:
+   productmasterid   price
+0              205  121300
+1               17   16600
+2              115   63300
+3              477   25000
+4              599   36100
+Counts per productmasterid:
+productmasterid
+157    2
+538    2
+238    2
+530    2
+564    2
+      ..
+496    1
+485    1
+52     1
+269    1
+343    1
+Name: count, Length: 646, dtype: int64
+Counts per productmasterid after filtering:
+productmasterid
+137    2
+234    2
+118    2
+157    2
+497    2
+572    2
+538    2
+222    2
+213    2
+123    2
+564    2
+530    2
+238    2
+589    2
+Name: count, dtype: int64
+Data with Lag Features:
+      id  ... price_lag_1
+555  556  ...     59000.0
+556  557  ...     59000.0
+562  563  ...     29900.0
+564  565  ...     40300.0
+565  566  ...     18300.0
+
+[5 rows x 10 columns]
+Product Data for productmasterid 157:
+      id  ... price_lag_1
+555  556  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 497:
+      id  ... price_lag_1
+556  557  ...     59000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 572:
+      id  ... price_lag_1
+562  563  ...     29900.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 538:
+      id                            name  ...  created_date  price_lag_1
+564  565  Vaseline Lip Therapy Rosy Lips  ...    2025-12-17      40300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 234:
+      id                                name  ...  created_date  price_lag_1
+565  566  Royco Bumbu Pelezat Serbaguna Ayam  ...    2025-12-18      18300.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 118:
+      id                           name  ...  created_date  price_lag_1
+567  568  Royco Bumbu Dasar Ayam Kuning  ...    2025-12-20      42000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 222:
+      id                              name  ...  created_date  price_lag_1
+573  574  Dove Micellar Shampoo Hair Boost  ...    2025-12-26      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 213:
+      id                                name  ...  created_date  price_lag_1
+574  575  Dove Micellar Shampoo Deep Cleanse  ...    2025-12-27      74100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 123:
+      id  ... price_lag_1
+575  576  ...     32100.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 238:
+      id                                name  ...  created_date  price_lag_1
+580  581  Dove Serum Shampoo Total Hair Fall  ...    2026-01-02      87000.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 589:
+      id                                      name  ...  created_date  price_lag_1
+581  582  Sunsilk Shampoo Co-Creations Black Shine  ...    2026-01-03      80400.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 137:
+      id                            name  ...  created_date  price_lag_1
+604  605  Lifebuoy Shampoo Anti Dandruff  ...    2026-01-26      41200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 564:
+      id  ... price_lag_1
+623  624  ...     10200.0
+
+[1 rows x 10 columns]
+Product Data for productmasterid 530:
+      id  ... price_lag_1
+624  625  ...     10200.0
+
+[1 rows x 10 columns]
+Predictions DataFrame:
+   productmasterid                       date  predicted_price
+0              157 2024-06-25 00:00:15.358315          59000.0
+1              157 2024-06-26 00:00:15.358315          59000.0
+2              157 2024-06-27 00:00:15.358315          59000.0
+3              497 2024-06-25 00:00:15.367071          59000.0
+4              497 2024-06-26 00:00:15.367071          59000.0
+Data saved to PostgreSQL successfully.
+2024-06-24 00:00:15 : 20240623 Finish
+=======================================================================
