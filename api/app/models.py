@@ -32,7 +32,7 @@ class Recommendation(db.Model):
     __table_args__ = {'schema': 'products'}
     productmasterid = db.Column(db.Integer, primary_key=True)
     predicted_price = db.Column(db.Float, nullable=False)
-    date = db.Column(db.DateTime, nullable=False)
+    date = db.Column(db.DateTime, primary_key=True)
 
     def __repr__(self):
         return f'<Recommendation {self.productmasterid}, {self.predicted_price}>'
