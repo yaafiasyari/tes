@@ -40,39 +40,39 @@ fi
 last_update=$(date +"%F %T")
 echo "${last_update} : scrapping indomart"
 echo "${last_update} : scrapping indomart" >> ${log_file}
-python python D:\Yaafi\Learn\tes\scraping\klikindomart.py >> ${log_file}
+python python D:/Yaafi/Learn/tes/scraping/klikindomart.py >> ${log_file}
 
 echo "${last_update} : scrapping tokped"
 echo "${last_update} : scrapping tokped" >> ${log_file}
-python D:\Yaafi\Learn\tes\scraping\tokped_data.py >> ${log_file}
+python D:/Yaafi/Learn/tes/scraping/tokped_data.py >> ${log_file}
 
 echo "${last_update} : normalisasi indomart"
 echo "${last_update} : normalisasi indomart" >> ${log_file}
-python /tes/normalisasi/nor_indomart.py >> ${log_file}
+python D:/Yaafi/Learn/tes/normalisasi/nor_indomart.py >> ${log_file}
 
 echo "${last_update} : normalisasi tokped"
 echo "${last_update} : normalisasi tokped" >> ${log_file}
-python D:\Yaafi\Learn\tes\normalisasi\nor_tokopedia.py >> ${log_file}
+python D:/Yaafi/Learn/tes/normalisasi/nor_tokopedia.py >> ${log_file}
 
 last_update=$(date +"%F %T")
 echo "${last_update} : data processing raw_product"
 echo "${last_update} : data processing raw_product" >> ${log_file}
-python D:\Yaafi\Learn\tes\data_pros\raw_products.py >> ${log_file}
+python D:/Yaafi/Learn/tes/data_pros/raw_products.py >> ${log_file}
 
 last_update=$(date +"%F %T")
 echo "${last_update} : data processing product_master"
 echo "${last_update} : data processing product_master" >> ${log_file}
-python D:\Yaafi\Learn\tes\data_pros\product_master.py >> ${log_file}
+python D:/Yaafi/Learn/tes/data_pros/product_master.py >> ${log_file}
 
 last_update=$(date +"%F %T")
 echo "${last_update} : data processing products"
 echo "${last_update} : data processing products" >> ${log_file}
-python D:\Yaafi\Learn\tes\data_pros\products.py >> ${log_file}
+python D:/Yaafi/Learn/tes/data_pros/products.py >> ${log_file}
 
 last_update=$(date +"%F %T")
 echo "${last_update} : ML prediction price"
 echo "${last_update} : ML prediction price" >> ${log_file}
-python D:\Yaafi\Learn\tes\ml\ml.py >> ${log_file}
+python D:/Yaafi/Learn/tes/ml/ml.py >> ${log_file}
 
 last_update=$(date +"%F %T")
 echo "${last_update} : ${periode} Finish"

@@ -54,7 +54,7 @@ def save_to_csv(products, file_path):
     df = pd.DataFrame(products)
     df.to_csv(file_path, index=False)
 
-file_path = 'E:/tes/normalisasi/products_klikindomart.csv'
+file_path = 'D:/Yaafi/Learn/tes/normalisasi/products_klikindomart.csv'
 
 products = scrape_klikindomart()
 save_to_csv(products, file_path)

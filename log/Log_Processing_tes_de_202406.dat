@@ -31,3 +31,196 @@
 2024-06-23 23:40:06 : ML prediction price
 2024-06-23 23:40:06 : 20240622 Finish
 =======================================================================
+2024-06-23 23:41:41 : Start  20240622
+2024-06-23 23:41:41 : scrapping indomart
+2024-06-23 23:41:41 : scrapping tokped
+2024-06-23 23:41:41 : normalisasi indomart
+2024-06-23 23:41:41 : normalisasi tokped
+2024-06-23 23:41:41 : data processing raw_product
+2024-06-23 23:41:41 : data processing product_master
+2024-06-23 23:41:41 : data processing products
+2024-06-23 23:41:41 : ML prediction price
+2024-06-23 23:41:41 : 20240622 Finish
+=======================================================================
+2024-06-23 23:43:53 : Start  20240622
+2024-06-23 23:43:54 : scrapping indomart
+2024-06-23 23:43:54 : scrapping tokped
+2024-06-23 23:43:54 : normalisasi indomart
+2024-06-23 23:43:54 : normalisasi tokped
+2024-06-23 23:43:54 : data processing raw_product
+2024-06-23 23:43:55 : data processing product_master
+2024-06-23 23:43:55 : data processing products
+2024-06-23 23:43:55 : ML prediction price
+2024-06-23 23:43:55 : 20240622 Finish
+=======================================================================
+2024-06-23 23:44:36 : Start  20240622
+2024-06-23 23:44:36 : scrapping indomart
+2024-06-23 23:44:36 : scrapping tokped
+Scraping URL: https://www.tokopedia.com/unilever/product/page/1
+Successfully retrieved page 1
+Found 10 product on page 1
+Scraping URL: https://www.tokopedia.com/unilever/product/page/2
+Successfully retrieved page 2
+Found 10 product on page 2
+Scraping URL: https://www.tokopedia.com/unilever/product/page/3
+Successfully retrieved page 3
+Found 10 product on page 3
+Scraping URL: https://www.tokopedia.com/unilever/product/page/4
+Successfully retrieved page 4
+Found 10 product on page 4
+Scraping URL: https://www.tokopedia.com/unilever/product/page/5
+Successfully retrieved page 5
+Found 10 product on page 5
+Scraping URL: https://www.tokopedia.com/unilever/product/page/6
+Successfully retrieved page 6
+Found 10 product on page 6
+Scraping URL: https://www.tokopedia.com/unilever/product/page/7
+Successfully retrieved page 7
+Found 10 product on page 7
+Scraping URL: https://www.tokopedia.com/unilever/product/page/8
+Successfully retrieved page 8
+Found 10 product on page 8
+Scraping URL: https://www.tokopedia.com/unilever/product/page/9
+Successfully retrieved page 9
+Found 10 product on page 9
+Scraping URL: https://www.tokopedia.com/unilever/product/page/10
+Successfully retrieved page 10
+Found 10 product on page 10
+Scraping URL: https://www.tokopedia.com/unilever/product/page/11
+Successfully retrieved page 11
+Found 10 product on page 11
+Scraping URL: https://www.tokopedia.com/unilever/product/page/12
+Successfully retrieved page 12
+Found 10 product on page 12
+Scraping URL: https://www.tokopedia.com/unilever/product/page/13
+Successfully retrieved page 13
+Found 10 product on page 13
+Scraping URL: https://www.tokopedia.com/unilever/product/page/14
+Successfully retrieved page 14
+Found 10 product on page 14
+Scraping URL: https://www.tokopedia.com/unilever/product/page/15
+Successfully retrieved page 15
+Found 10 product on page 15
+Scraping URL: https://www.tokopedia.com/unilever/product/page/16
+Successfully retrieved page 16
+Found 10 product on page 16
+Scraping URL: https://www.tokopedia.com/unilever/product/page/17
+Successfully retrieved page 17
+Found 10 product on page 17
+Scraping URL: https://www.tokopedia.com/unilever/product/page/18
+Successfully retrieved page 18
+Found 10 product on page 18
+Scraping URL: https://www.tokopedia.com/unilever/product/page/19
+Successfully retrieved page 19
+Found 10 product on page 19
+Scraping URL: https://www.tokopedia.com/unilever/product/page/20
+Successfully retrieved page 20
+Found 10 product on page 20
+Scraping URL: https://www.tokopedia.com/unilever/product/page/21
+Successfully retrieved page 21
+Found 10 product on page 21
+Scraping URL: https://www.tokopedia.com/unilever/product/page/22
+Successfully retrieved page 22
+Found 10 product on page 22
+Scraping URL: https://www.tokopedia.com/unilever/product/page/23
+Successfully retrieved page 23
+Found 10 product on page 23
+Scraping URL: https://www.tokopedia.com/unilever/product/page/24
+Successfully retrieved page 24
+Found 10 product on page 24
+Scraping URL: https://www.tokopedia.com/unilever/product/page/25
+Successfully retrieved page 25
+Found 10 product on page 25
+Scraping URL: https://www.tokopedia.com/unilever/product/page/26
+Successfully retrieved page 26
+Found 10 product on page 26
+Scraping URL: https://www.tokopedia.com/unilever/product/page/27
+Successfully retrieved page 27
+Found 10 product on page 27
+Scraping URL: https://www.tokopedia.com/unilever/product/page/28
+Successfully retrieved page 28
+Found 10 product on page 28
+Scraping URL: https://www.tokopedia.com/unilever/product/page/29
+Successfully retrieved page 29
+Found 10 product on page 29
+Scraping URL: https://www.tokopedia.com/unilever/product/page/30
+Successfully retrieved page 30
+Found 10 product on page 30
+Scraping URL: https://www.tokopedia.com/unilever/product/page/31
+Successfully retrieved page 31
+Found 10 product on page 31
+Scraping URL: https://www.tokopedia.com/unilever/product/page/32
+Successfully retrieved page 32
+Found 10 product on page 32
+Scraping URL: https://www.tokopedia.com/unilever/product/page/33
+Successfully retrieved page 33
+Found 10 product on page 33
+Scraping URL: https://www.tokopedia.com/unilever/product/page/34
+Successfully retrieved page 34
+Found 10 product on page 34
+Scraping URL: https://www.tokopedia.com/unilever/product/page/35
+Successfully retrieved page 35
+Found 10 product on page 35
+Scraping URL: https://www.tokopedia.com/unilever/product/page/36
+Successfully retrieved page 36
+Found 10 product on page 36
+Scraping URL: https://www.tokopedia.com/unilever/product/page/37
+Successfully retrieved page 37
+Found 10 product on page 37
+Scraping URL: https://www.tokopedia.com/unilever/product/page/38
+Successfully retrieved page 38
+Found 10 product on page 38
+Scraping URL: https://www.tokopedia.com/unilever/product/page/39
+Successfully retrieved page 39
+Found 10 product on page 39
+Scraping URL: https://www.tokopedia.com/unilever/product/page/40
+Successfully retrieved page 40
+Found 10 product on page 40
+Scraping URL: https://www.tokopedia.com/unilever/product/page/41
+Successfully retrieved page 41
+Found 10 product on page 41
+Scraping URL: https://www.tokopedia.com/unilever/product/page/42
+Successfully retrieved page 42
+Found 10 product on page 42
+Scraping URL: https://www.tokopedia.com/unilever/product/page/43
+Successfully retrieved page 43
+Found 10 product on page 43
+Scraping URL: https://www.tokopedia.com/unilever/product/page/44
+Successfully retrieved page 44
+Found 10 product on page 44
+Scraping URL: https://www.tokopedia.com/unilever/product/page/45
+Successfully retrieved page 45
+Found 10 product on page 45
+Scraping URL: https://www.tokopedia.com/unilever/product/page/46
+Successfully retrieved page 46
+Found 10 product on page 46
+Scraping URL: https://www.tokopedia.com/unilever/product/page/47
+Successfully retrieved page 47
+Found 10 product on page 47
+Scraping URL: https://www.tokopedia.com/unilever/product/page/48
+Successfully retrieved page 48
+Found 10 product on page 48
+Scraping URL: https://www.tokopedia.com/unilever/product/page/49
+Successfully retrieved page 49
+Found 10 product on page 49
+Scraping URL: https://www.tokopedia.com/unilever/product/page/50
+Successfully retrieved page 50
+Found 10 product on page 50
+Scraping URL: https://www.tokopedia.com/unilever/product/page/51
+Successfully retrieved page 51
+Found 10 product on page 51
+Scraping URL: https://www.tokopedia.com/unilever/product/page/52
+Successfully retrieved page 52
+Found 10 product on page 52
+Scraping URL: https://www.tokopedia.com/unilever/product/page/53
+Successfully retrieved page 53
+Found 10 product on page 53
+Scraping URL: https://www.tokopedia.com/unilever/product/page/54
+Successfully retrieved page 54
+2024-06-23 23:48:12 : Start  20240622
+2024-06-23 23:48:12 : scrapping indomart
+2024-06-23 23:48:12 : scrapping tokped
+Scraping URL: https://www.tokopedia.com/unilever/product/page/1
+Successfully retrieved page 1
+Found 10 product on page 1
+Scraping URL: https://www.tokopedia.com/unilever/product/page/2
