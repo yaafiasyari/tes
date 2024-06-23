@@ -48,7 +48,7 @@ python D:\Yaafi\Learn\tes\scraping\tokped_data.py >> ${log_file}
 
 echo "${last_update} : normalisasi indomart"
 echo "${last_update} : normalisasi indomart" >> ${log_file}
-python D:\Yaafi\Learn\tes\normalisasi\nor_indomart.py >> ${log_file}
+python /tes/normalisasi/nor_indomart.py >> ${log_file}
 
 echo "${last_update} : normalisasi tokped"
 echo "${last_update} : normalisasi tokped" >> ${log_file}
