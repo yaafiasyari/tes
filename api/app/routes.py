@@ -62,3 +62,23 @@ def get_recommendations():
         } for recommendation in recommendations
     ]
     return jsonify(recommendations_list)
+
+@app.route('/products/<int:id>', methods=['GET'])
+def get_product_by_id(id):
+    product = Product.query.get(id)
+    if product is None:
+        return jsonify({'error': 'Product not found'}), 404
+    return jsonify({
+        'id': product.id,
+        'name': product.name,
+        'price': product.price,
+        'originalprice': product.originalprice,
+        'discountpercentage': product.discountpercentage,
+        'detail': product.detail,
+        'platform': product.platform,
+        'productmasterid': product.productmasterid,
+        'created_date': product.created_date
+    })
+
+if __name__ == '__main__':
+    app.run(debug=True)
